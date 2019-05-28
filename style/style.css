@@ -26,6 +26,8 @@ body textarea:focus, body input:focus {
 }
 
 .landing__section .first {
+  width: 100%;
+  height: 100%;
   background-color: #04eeee;
   position: relative;
 }
@@ -101,6 +103,8 @@ body textarea:focus, body input:focus {
 }
 
 .landing__section .second {
+  width: 100%;
+  height: 100%;
   background-color: #f9476c;
 }
 /*# sourceMappingURL=style.css.map */
