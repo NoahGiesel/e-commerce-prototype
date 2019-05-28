@@ -1,6 +1,6 @@
 let input = document.querySelector('.input_search');
 let search = document.querySelector('.searchButton'); 
-
+let body = document.querySelector('body');
 
 let toggler = false;
 
@@ -18,3 +18,5 @@ function searchForItem() {
         toggler = !toggler;
      } 
 }
+
+ 
