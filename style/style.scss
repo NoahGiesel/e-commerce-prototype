@@ -25,7 +25,7 @@ html , body {
 }
 
 body {
-    background-color: $bg-color;  
+    background-color: $black;
     font-family: 'Mukta', sans-serif; 
 
 
@@ -46,7 +46,7 @@ body {
     .first {
         width: 100%;
         height: 100%;   
-        background-color: $lightblue-color;
+        background-color: $black;
         position: relative; 
 
         h2 { 
@@ -96,6 +96,7 @@ body {
                 border-bottom: 1px solid $bg-color; 
                 transform: translateY(150%);
                 transition-duration: 1000ms;
+                color: $bg-color;
  
 
 
@@ -110,46 +111,32 @@ body {
 
         img { 
             width: 100%;
-            position: absolute;
-            bottom: -25% ; 
+            position: absolute; 
             left: 50%;
-            transform: translateX(-50%)rotate(65deg);
-            animation: move 3s forwards;
-            z-index: 10;
+            transform: translateX(-50%);
+            animation: move 1700ms forwards ease-in-out; 
 
             @keyframes move {
                 0% { 
-                    bottom:0%;
-                    transform: translateX(-50%)rotate(65deg);
+                    bottom: -80%;
+                    transform: translateX(-50%);
                 }
-
-                60%{
-                    bottom:-35;
-                    transform: translateX(-50%)rotate(65deg);
-                }
-
-                80%{
-                    bottom:-25%;
-                    transform: translateX(-50%)rotate(360deg);
-                } 
-                90%{
-                    bottom:-25%;
-                    transform: translateX(-50%)rotate(0deg);
-                }  
+ 
                 100%{
-                    bottom:-30%;
-                    transform: translateX(-50%)rotate(0deg);
+                    bottom: 0%;
+                    transform: translateX(-50%); 
+                    z-index: 10;
                 }
             }
         }
         h1 { 
             position: absolute;
-            top: 35%;
+            top: 30%;
             left: 50%;
             transform: translate(-50%,-50%);
             width: 100%;
             text-align: center;
-            font-size: 38px;
+            font-size: 36px;
             text-transform: uppercase;
             color: $bg-color;
         }
@@ -159,29 +146,95 @@ body {
     .second { 
         width: 100%;
         height: 100%;
-        background-color: $lightblue-color ;
+        background-color: $black;
         position : relative; 
+        z-index: 20;
 
 
         .checkout { 
             position: absolute;
-            top: 60%;
+            top: 70%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%); 
+            width: 100%;
             text-align: center;
-            text-decoration: none;
-            font-size: 20px;
-            color: $bg-color;
-            padding: 15px 20px;
-            border: 1px solid $bg-color;
-            border-radius: 5px;
-            transition-duration: 700ms;
+            
+            .first { 
+                color : $bg-color;
+                text-decoration: none;
+                background-color: $black;
+                padding: 15px 35px;
+                border: 1px solid $bg-color;
+                margin: 0 10px;
+            }
+            .second {
+                color: $bg-color;
+                text-decoration: none;
+                background-color: $black;
+                padding: 15px 12px;
+                border: 1px solid $bg-color;
+                margin: 0 10px;
 
-
-            &:hover {
-                border-radius: 20px;
             }
         }
-    }
+
+        p { 
+            color: $bg-color;
+            width: 80%;
+            margin: 10px auto;
+            text-align: center;     
+        }
+    } 
+ 
 }
  
+.second__section {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+
+        background-color: $white;
+    
+
+
+
+    .item__selection {
+        border: 1px solid $bg-color; 
+        padding: 10px;
+        margin: 10px;
+        background-color: $black;
+        color: $white;
+
+
+        h4 { 
+            font-size: 20px;
+            margin: 15px 0;
+
+        }
+        P { 
+            font-size: 14px;
+            margin: 15px 0;
+        }
+
+        img {
+            width: 100%; 
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
