@@ -248,4 +248,34 @@ body textarea:focus, body input:focus {
   height: 20vh;
   width: 100%;
 }
+
+.contact__section {
+  height: 60vh;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+}
+
+.contact__section h1 {
+  margin: 20px;
+  color: #fff;
+  font-size: 40px;
+}
+
+.contact__section a {
+  text-decoration: none;
+}
+
+.contact__section i {
+  color: #fff;
+  padding: 10px;
+}
+
+.contact__section h4 {
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */

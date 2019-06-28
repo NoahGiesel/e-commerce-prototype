@@ -235,14 +235,38 @@ body {
     width: 100%;
 }
 
+.contact__section { 
+    height: 60vh ; 
+    width: 100%;
+    padding: 20px 0 ; 
+    text-align: center;
+    display: grid;
+    grid-template-rows: 50% 50%;
+
+    h1 { 
+        margin: 20px ;
+        color: $white;
+        font-size: 40px;
+    }
+    a { 
+        text-decoration: none;
+    }
+    i { 
+        color: $white;
+        padding: 10px;
+    }
+
+    h4 {
+        color: $white;
+    }
+}
 
 
 
 
 
 
-
-
+// descrive easch thing
 
 
 
